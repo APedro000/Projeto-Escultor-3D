@@ -1,16 +1,15 @@
 #include "sculptor.hpp"
-#include <stdlib.h>   // biblioteca padrão
+#include <stdlib.h>   
 #include <string>
-#include <iostream>   // input, output
-#include <fstream>    // arquivos, template de classe e classe
-#include <iomanip>    // parametrização
-#include <cmath>      // equações matemáticas
-#include <vector>     // defines the vector container class
-#include <queue>      // defines the queue and priority_queue container adaptor classes:
+#include <iostream>   
+#include <fstream>    
+#include <iomanip>    
+#include <cmath>     
+#include <vector>     
 
 using namespace std;
 
-//CONSTRUTOR DA CLASSE:Cria a matriz tridimensional v, e realiza a alocação dinâmica de memório para o struct que irá armazenar os dados dos voxels
+//CONSTRUTOR DA CLASSE:Cria a matriz tridimensional v, e realiza a alocaÃ§Ã£o dinÃ¢mica de memÃ³rio para o struct que irÃ¡ armazenar os dados dos voxels
 sculptor::sculptor(int _x, int _y, int _z){ 
 	x = _x;
   	y = _y;
@@ -40,7 +39,7 @@ sculptor::sculptor(int _x, int _y, int _z){
     }
 }
 
-//DESTRUTOR DA CLASSE: Libera a memória alocada
+//DESTRUTOR DA CLASSE: Libera a memÃ³ria alocada
 sculptor::~sculptor(){
   	for(int h=0; h<x; h++){
   		for(int i=0; i<y; i++){
